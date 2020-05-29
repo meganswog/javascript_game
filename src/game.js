@@ -74,8 +74,8 @@ function create () {
   diamonds.enableBody = true
 
   //  Create 12 diamonds evenly spaced apart
-  for (var i = 0; i < 20; i++) {
-    const diamond = diamonds.create(i * 7, 0, 'diamond')
+  for (var i = 0; i < 12; i++) {
+    const diamond = diamonds.create(i * 70, 0, 'diamond')
 
     //  Drop em from the sky and bounce a bit
     diamond.body.gravity.y = 1000
