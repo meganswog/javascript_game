@@ -45,8 +45,8 @@ function create () {
   //  This stops it from falling away when you jump on it
   ground.body.immovable = true
 
-  //  Now let's create two ledges
-  let ledge = platforms.create(400, 450, 'ground')
+  //  Now let's create three ledges
+  let ledge = platforms.create(400, 450, 500 'ground')
   ledge.body.immovable = true
 
   ledge = platforms.create(-75, 350, 'ground')
