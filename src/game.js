@@ -73,10 +73,9 @@ function create () {
   //  Enable physics for any object that is created in this group
   diamonds.enableBody = true
 
-  //  Create 12 diamonds evenly spaced apart
-  for (var i = 0; i < 12; i++) {
-    const diamond = diamonds.create(i * 70, 0, 'diamond')
-
+  //  Create 15 diamonds evenly spaced apart
+  for (var i = 0; i < 15; i++) {
+    const diamond = diamonds.create(i * 60, 0, 'diamond')
     //  Drop em from the sky and bounce a bit
     diamond.body.gravity.y = 1000
     diamond.body.bounce.y = 0.3 + Math.random() * 0.2
@@ -116,8 +115,8 @@ function update () {
   if (cursors.up.isDown && player.body.touching.down) {
     player.body.velocity.y = -400
   }
-  // Show an alert modal when score reaches 120
-  if (score === 120) {
+  // Show an alert modal when score reaches 150
+  if (score === 150) {
     alert('You win!')
     score = 0
   }
